@@ -1,28 +1,19 @@
 let nKM = prompt ("Numero Km");
 let passeggero = prompt ("Età del passeggero");
 let biglietto = 0.21;
-
-
-var totale = nKM * biglietto;
+let totale = nKM * biglietto;
 
 
 if(passeggero < 18){
-
+    totale = (totale * 0.2)
 }
-else if(passeggero > 60){
-
+else if(passeggero > 65){
+    totale = (totale * 0.4)
 }
 
 
-
-
-document.write(totale)
-
+document.writeln("il costo totate del biglietto è di" + " " + totale + "€")
 console.log("nKM")
 console.log("passeggero")
 console.log("0.21")
 
-// function changeColor(newColor) {
-//     const elem = document.getElementById("para");
-//     elem.style.color = newColor;
-// }
